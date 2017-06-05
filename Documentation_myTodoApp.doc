@@ -7,6 +7,6 @@ Implementation: ‪Entire code is generic so it can be extended to host ’n’ 
 
 External Libraries: Bootstrap.min.css, jquery-3.1.1.min.js, Sortable.js
 
-Technology: HTML5, CSS3, jQuery, javascript, Bootstrap4
+Technology: HTML5, CSS3, jQuery, javascript, Bootstrap4 
 
 

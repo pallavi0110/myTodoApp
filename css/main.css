@@ -1,0 +1,131 @@
+body {
+    overflow: hidden;
+    background-color:#efefef !important;
+}
+.container {
+    height: 85vh;
+    overflow: auto;
+    margin: 0 auto;
+}
+.form-group input {
+    width: 320px;
+    max-width: 100%;
+}
+.list-group {
+    padding: 10px !important;
+    min-height: 300px !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.list-group:before {
+    content: attr(title);
+    display: block;
+    background: #1B95E0;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.list-group.module-color-orange:before {
+    background: gold;
+}
+.list-group.module-color-orange:after {
+    background: goldenrod;
+}
+.list-group:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: attr(data-count);
+    background: #5AC3DA;
+    min-width: 40px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    color: #ffffff;
+}
+.board-container {
+    position: relative;
+
+}
+body .board-container:after,.fa-trash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #708090;
+    min-width: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+}
+body .board-container:after {
+    content: attr(data-count);
+}
+.trash {
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 30px;
+
+} 
+.trash.active {
+    background-color: red;
+}
+.list-group-item {
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+.module-color-blue {
+    background-color: #23527c;
+}
+.module-color-orange {
+    background-color: orange;
+}
+.nav-icon {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-family: FontAwesome;
+    content: "\f1fb" !important;
+    background: #808080;
+    min-width: 40px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor:pointer;
+
+}
+.navbar-brand,.navbar-brand:hover{
+    color: #ffffff;
+}
+.module-color-orange .nav-icon {
+    color: #23527c;
+}
+.module-color-blue .nav-icon {
+    color: gold;
+}
+.control-label {
+    margin:5px;
+    color: #708090;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+.footer p {
+    color: #fff;
+    margin: 10px;
+    font-size: 12px;
+}
